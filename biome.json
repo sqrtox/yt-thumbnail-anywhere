@@ -18,20 +18,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "correctness": {
-        "noUnusedImports": {
-          "fix": "none",
-          "level": "error"
-        },
-        "noUnusedVariables": "error"
-      },
-      "recommended": true,
-      "style": {
-        "useBlockStatements": "error"
-      },
-      "suspicious": {
-        "noConsole": "error"
-      }
+      "all": true
     }
   },
   "organizeImports": {

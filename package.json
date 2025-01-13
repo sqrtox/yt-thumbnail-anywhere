@@ -16,6 +16,10 @@
     "userscript-metadata": "^1.1.0"
   },
   "homepage": "https://github.com/sqrtox/yt-thumbnail-anywhere#readme",
+  "imports": {
+    "##/*": "./*",
+    "#src/*": "./src/*"
+  },
   "keywords": ["userscript", "youtube"],
   "license": "MIT",
   "name": "yt-thumbnail-anywhere",

@@ -6,8 +6,8 @@
     "moduleResolution": "nodenext",
     "noEmit": true,
     "paths": {
-      "@/*": ["*"],
-      "@src/*": ["src/*"]
+      "##/*": ["*"],
+      "#src/*": ["src/*"]
     },
     "resolveJsonModule": true,
     "strict": true,

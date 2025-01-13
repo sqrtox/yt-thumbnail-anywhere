@@ -1,5 +1,5 @@
-import { createCssClasses, injectCss } from "@src/css.js";
-import { loadImage } from "@src/image.js";
+import { createCssClasses, injectCss } from "#src/css.js";
+import { loadImage } from "#src/image.js";
 
 export const applySmallThumbnail = async (
   watchId: string,

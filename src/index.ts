@@ -1,4 +1,4 @@
-import { applySmallThumbnail, createLargeThumbnail } from "@src/thumbnail.js";
+import { applySmallThumbnail, createLargeThumbnail } from "#src/thumbnail.js";
 
 const largeThumbnail = createLargeThumbnail();
 

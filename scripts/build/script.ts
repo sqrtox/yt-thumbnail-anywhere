@@ -1,8 +1,9 @@
+// biome-ignore lint/correctness/noNodejsModules: Ignore this as we expect this script to be run server-side
 import { join, resolve } from "node:path";
-import pkg from "@/package.json" with { type: "json" };
-import { metadata } from "@/scripts/build/metadata.js";
 import { build } from "esbuild";
 import { stringify } from "userscript-metadata";
+import pkg from "##/package.json" with { type: "json" };
+import { metadata } from "##/scripts/build/metadata.js";
 
 const fileName = pkg.name.replace(/^userscript-/, "");
 const rootDir = resolve(import.meta.dirname, "../../");
