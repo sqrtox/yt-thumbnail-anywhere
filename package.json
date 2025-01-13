@@ -1,0 +1,37 @@
+{
+  "author": "sqrtox",
+  "bugs": {
+    "url": "https://github.com/sqrtox/yt-thumbnail-anywhere/issues"
+  },
+  "description": "A user script to add a little functionality related to YouTube thumbnails.",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.5",
+    "esbuild": "^0.24.2",
+    "escape-string-regexp": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "npm-run-all2": "^7.0.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3",
+    "userscript-metadata": "^1.1.0"
+  },
+  "homepage": "https://github.com/sqrtox/yt-thumbnail-anywhere#readme",
+  "keywords": ["userscript", "youtube"],
+  "license": "MIT",
+  "name": "yt-thumbnail-anywhere",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqrtox/yt-thumbnail-anywhere.git"
+  },
+  "scripts": {
+    "build": "run-s build:clean build:script build:format",
+    "build:clean": "rimraf dist",
+    "build:format": "bun biome format --config-path biome.build.json --write dist",
+    "build:script": "bun run scripts/build/script.ts",
+    "watch": "nodemon"
+  },
+  "trustedDependencies": ["@biomejs/biome", "esbuild"],
+  "type": "module",
+  "version": "1.0.0"
+}

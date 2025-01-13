@@ -1,0 +1,9 @@
+{
+  "$schema": "../schema.json",
+  "id": "ja",
+  "name": "日本語",
+  "translation": {
+    "userscript.metadata.description": "YouTubeのサムネイルに関するちょっとした機能を追加するユーザースクリプトです。",
+    "userscript.metadata.name": "YouTube - サムネイルといっしょ"
+  }
+}

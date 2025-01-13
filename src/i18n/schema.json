@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "id": {
+      "required": true,
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "translation": {
+      "properties": {
+        "userscript.metadata.description": {
+          "type": "string"
+        },
+        "userscript.metadata.name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userscript.metadata.description",
+        "userscript.metadata.name"
+      ],
+      "type": "object"
+    }
+  },
+  "required": ["id", "name", "translation"],
+  "type": "object"
+}

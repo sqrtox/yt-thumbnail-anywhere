@@ -1,0 +1,9 @@
+{
+  "$schema": "../schema.json",
+  "id": "en",
+  "name": "English",
+  "translation": {
+    "userscript.metadata.description": "A user script to add a little functionality related to YouTube thumbnails.",
+    "userscript.metadata.name": "YouTube - Thumbnail Anywhere"
+  }
+}
