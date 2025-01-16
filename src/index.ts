@@ -3,8 +3,15 @@ import { applySmallThumbnail, createLargeThumbnail } from "#src/thumbnail.js";
 const largeThumbnail = createLargeThumbnail();
 
 const apply = async (): Promise<void> => {
-  const searchParams = new URLSearchParams(location.search);
-  const watchId = searchParams.get("v");
+  let watchId: string | undefined;
+
+  if (location.pathname.startsWith("/live/")) {
+    watchId = location.pathname.split("/").pop();
+  } else {
+    const searchParams = new URLSearchParams(location.search);
+
+    watchId = searchParams.get("v") ?? undefined;
+  }
 
   if (!watchId) {
     return;
