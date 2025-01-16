@@ -20,7 +20,10 @@
     "##/*": "./*",
     "#src/*": "./src/*"
   },
-  "keywords": ["userscript", "youtube"],
+  "keywords": [
+    "userscript",
+    "youtube"
+  ],
   "license": "MIT",
   "name": "yt-thumbnail-anywhere",
   "private": true,
@@ -35,7 +38,10 @@
     "build:script": "bun run scripts/build/script.ts",
     "watch": "nodemon"
   },
-  "trustedDependencies": ["@biomejs/biome", "esbuild"],
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "esbuild"
+  ],
   "type": "module",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
