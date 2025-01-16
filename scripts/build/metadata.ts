@@ -17,5 +17,4 @@ export const metadata: Metadata = {
   author: pkg.author,
   license: pkg.license,
   grant: "none",
-  runAt: "document-end",
 };
