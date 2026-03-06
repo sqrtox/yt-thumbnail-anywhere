@@ -5,7 +5,7 @@
   },
   "description": "A user script to add a little functionality related to YouTube thumbnails.",
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.4.6",
     "@types/node": "^22.10.5",
     "esbuild": "^0.24.2",
     "escape-string-regexp": "^5.0.0",
