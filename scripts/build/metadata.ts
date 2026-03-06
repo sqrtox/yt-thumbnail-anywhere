@@ -16,5 +16,5 @@ export const metadata: Metadata = {
   namespace: url,
   author: pkg.author,
   license: pkg.license,
-  grant: "none",
+  grant: "GM_addStyle",
 };

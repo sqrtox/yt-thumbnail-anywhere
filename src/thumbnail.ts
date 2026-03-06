@@ -1,4 +1,4 @@
-import { createCssClasses, injectCss } from "#src/css.js";
+import { createCssClasses } from "#src/css.js";
 import { loadImage } from "#src/image.js";
 
 export const applySmallThumbnail = async (
@@ -7,7 +7,7 @@ export const applySmallThumbnail = async (
 ): Promise<void> => {
   const classes = createCssClasses("title", "smallThumbnail");
 
-  injectCss(`
+  GM_addStyle(`
   .${classes.title} {
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@ export interface LargeThumbnailController {
 export const createLargeThumbnail = (): LargeThumbnailController => {
   const classes = createCssClasses("hidden", "largeThumbnail");
 
-  injectCss(`
+  GM_addStyle(`
     .${classes.largeThumbnail} {
       display: flex;
       align-items: center;

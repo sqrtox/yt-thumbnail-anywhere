@@ -13,11 +13,3 @@ export const createCssClasses = <const T extends readonly string[]>(
 
   return result as ReturnType<typeof createCssClasses<T>>;
 };
-
-export const injectCss = (css: string) => {
-  const style = document.createElement("style");
-
-  style.setHTMLUnsafe(css);
-
-  document.head.append(style);
-};
