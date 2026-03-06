@@ -1,18 +1,27 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "erasableSyntaxOnly": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "NodeNext",
+    "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmit": true,
     "paths": {
-      "##/*": ["*"],
-      "#src/*": ["src/*"]
+      "##/*": [
+        "./*"
+      ],
+      "#src/*": [
+        "./src/*"
+      ]
     },
     "resolveJsonModule": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "esnext"
   },
-  "exclude": ["node_modules"],
-  "include": ["scripts/**/*.ts", "src/**/*.ts"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "scripts/**/*.ts",
+    "src/**/*.ts"
+  ]
 }
