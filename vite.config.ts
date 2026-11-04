@@ -63,6 +63,11 @@ const userscriptCssModules = (): Plugin => ({
 
 export default defineConfig({
     build: {
+        rolldownOptions: {
+            output: {
+                banner: '"use strict";',
+            },
+        },
         watch:
             process.env.NODE_ENV === "development"
                 ? {
