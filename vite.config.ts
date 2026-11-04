@@ -81,7 +81,7 @@ export default defineConfig({
         userscript({
             entry: "src/index.ts",
             header: {
-                name: pkg.name,
+                name: "YouTube - Thumbnail Anywhere",
                 "name:ja": "YouTube - サムネイルといっしょ",
                 description: pkg.description,
                 "description:ja":
