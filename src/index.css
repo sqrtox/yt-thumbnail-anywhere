@@ -4,6 +4,7 @@
     background-color: transparent;
     max-width: 50svw;
     max-height: 50svh;
+    cursor: zoom-out;
 }
 
 .largeThumbnailContainer::backdrop {
