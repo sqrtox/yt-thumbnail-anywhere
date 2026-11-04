@@ -1,13 +1,3 @@
 {
-  "editor.defaultFormatter": "biomejs.biome",
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "bun.lock"
-      ],
-      "schema": {
-        "allowTrailingCommas": true
-      }
-    }
-  ]
+    "editor.defaultFormatter": "biomejs.biome"
 }

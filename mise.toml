@@ -1,0 +1,2 @@
+[tools]
+nub = { version = "latest", allow_builds = ["@nubjs/nub"] }

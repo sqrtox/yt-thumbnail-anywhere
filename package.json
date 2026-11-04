@@ -1,47 +1,42 @@
 {
-  "author": "sqrtox",
-  "bugs": {
-    "url": "https://github.com/sqrtox/yt-thumbnail-anywhere/issues"
-  },
-  "description": "A user script to add a little functionality related to YouTube thumbnails.",
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.6",
-    "@types/node": "^22.10.5",
-    "esbuild": "^0.24.2",
-    "escape-string-regexp": "^5.0.0",
-    "nodemon": "^3.1.9",
-    "npm-run-all2": "^7.0.2",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.7.3",
-    "userscript-metadata": "^1.1.0"
-  },
-  "homepage": "https://github.com/sqrtox/yt-thumbnail-anywhere#readme",
-  "imports": {
-    "##/*": "./*",
-    "#src/*": "./src/*"
-  },
-  "keywords": [
-    "userscript",
-    "youtube"
-  ],
-  "license": "MIT",
-  "name": "yt-thumbnail-anywhere",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sqrtox/yt-thumbnail-anywhere.git"
-  },
-  "scripts": {
-    "build": "run-s build:clean build:script build:format",
-    "build:clean": "rimraf dist",
-    "build:format": "bun biome format --config-path biome.build.json --write dist",
-    "build:script": "bun run scripts/build/script.ts",
-    "watch": "nodemon"
-  },
-  "trustedDependencies": [
-    "@biomejs/biome",
-    "esbuild"
-  ],
-  "type": "module",
-  "version": "1.0.2"
+    "name": "yt-thumbnail-anywhere",
+    "version": "1.1.0",
+    "private": true,
+    "description": "A user script to add a little functionality related to YouTube thumbnails.",
+    "keywords": [
+        "youtube",
+        "thumbnail",
+        "userscript"
+    ],
+    "homepage": "https://github.com/sqrtox/yt-thumbnail-anywhere#readme",
+    "bugs": {
+        "url": "https://github.com/sqrtox/yt-thumbnail-anywhere/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sqrtox/yt-thumbnail-anywhere.git"
+    },
+    "license": "MIT",
+    "author": "sqrtox",
+    "type": "module",
+    "scripts": {
+        "dev": "NODE_ENV=development vite build",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.6.4",
+        "@types/node": "^26.6.6",
+        "postcss": "^8.5.32",
+        "postcss-modules": "^9.0.1",
+        "typescript": "^7.0.2",
+        "vite": "^8.3.5",
+        "vite-userscript-plugin": "^2.5.5"
+    },
+    "devEngines": {
+        "packageManager": {
+            "name": "nub",
+            "version": "^0.7.0",
+            "onFail": "ignore"
+        }
+    }
 }

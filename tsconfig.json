@@ -1,27 +1,19 @@
 {
-  "compilerOptions": {
-    "erasableSyntaxOnly": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "noEmit": true,
-    "paths": {
-      "##/*": [
-        "./*"
-      ],
-      "#src/*": [
-        "./src/*"
-      ]
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "strict": true,
+        "erasableSyntaxOnly": true,
+        "noEmit": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "types": [
+            "vite/client",
+            "vite-userscript-plugin/types/tampermonkey",
+            "vite-userscript-plugin/virtual"
+        ]
     },
-    "resolveJsonModule": true,
-    "strict": true,
-    "target": "esnext"
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "scripts/**/*.ts",
-    "src/**/*.ts"
-  ]
+    "include": ["vite.config.ts", "src/**/*.ts"],
+    "exclude": ["node_modules"]
 }
